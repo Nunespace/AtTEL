@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Contacter @Tel</title>
+       
+
+    </head>
+
+    <body>
+        <div class="bloc_page">
+            
+                 
+                    <h1>Contact</h1>
+
+
+                                    <form method="post" action="traitement.php">
+
+                                        <label for="collectivite" >Votre collectivité</label>
+                                        <input type="text" name="collectivite" id="collectivite" size=117 placeholder="Précisez si communauté de communes/syndicat..." autofocus/>
+
+                                         <p>
+                                       Veuillez indiquer la strate de population de votre collectivité :<br />
+                                       <input type="radio" name="habitants" value="moins500" id="moins500" /> <label for="moins500">Moins de 500 hab</label><br />
+                                       <input type="radio" name="habitants" value="500-3500" id="entre_500-2000" /> <label for="entre_500-2000">entre 500 et 2000 hab</label><br/>
+                                       <input type="radio" name="habitants" value="500-3500" id="entre_2000-3500" /> <label for="entre_2000-3500">entre 2001 et 3500 hab</label><br/>
+                                       <input type="radio" name="habitants" value="35000-10000" id="entre_3500-10000" /> <label for="entre_3500-10000">entre 3501 et 10 000 hab</label><br />
+                                       <input type="radio" name="habitants" value="plus10000" id="plus10000" /> <label for="plus10000">plus de 10 000 hab</label></p>
+
+                                       
+                                        <label for="nom_prenom">Votre nom et prénom</label>
+                                        <input type="text" name="nom_prenom" id="nom_prenom" size="117"/><br/>
+
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email" size=117 required/><br/>
+
+                                        <label for="message">Votre message</label><br />                           
+                                        <textarea name="message" id="message" rows="20" cols="100"></textarea>
+
+                                        <input type="submit" value="Envoyer" />
+                                       
+                                    </form>
+                        
+
+
+
+                    
+
+            <footer>
+                   <nav>
+                <ul>
+                    <li><a href="AtTEL.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="prestations.html">Prestations</a></li>
+                    <li><a href="liens_utiles.html">Liens utiles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>@tel</h1>
+            </footer>
+
+        </div>
+    </body>
+</html>

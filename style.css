@@ -1,0 +1,296 @@
+
+/* Eléments communs à toutes les pages */
+
+@font-face {
+    font-family: 'collection_new_styleregular';
+    src: url('polices/collectionwstyle/webfont.woff2') format('woff2'),
+         url('polices/collectionwstyle/webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('polices/alexbrush/alexbrush-webfont.woff2') format('woff2'),
+         url('polices/alexbrush/alexbrush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+}
+
+body
+{
+  
+  font-family: serif arial;
+  background-color: rgb(222, 234,245, 0.5);
+  color: #181818;
+     
+}
+
+.bloc_page
+{
+    border: 1px #30a16e outset;
+    border-radius: 15px;
+    width: 95%;
+    margin: auto;
+
+    padding-right: 15px;
+}
+
+
+header
+{
+    
+    display: flex;
+    margin-bottom : 75px
+       
+}
+
+
+
+
+    
+
+h1
+{   
+    
+    font-family: 'collection_new_styleregular';
+    margin-left:1%;
+    font-size: 60px;
+    
+    height: 10px;
+}
+
+h2
+{   
+    
+    font-family: 'open_sansbold_italic';
+    font-size: 15px;
+}
+
+p 
+{
+    width: 100%;
+    justify-content: center;
+    
+    padding-left:10px;
+    padding-bottom: 10px;
+    margin : auto;
+    
+}
+
+a
+
+{
+    color: #181818;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: greenyellow;
+}
+
+ul
+{
+    list-style-type: circle;
+}
+
+
+section
+{
+    
+    margin : auto;
+}
+
+/* Navigation en footer */
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top : 50px
+    
+    
+}
+
+nav li
+{
+    
+    text-decoration: none;
+    margin-right: 35px;
+    margin-bottom: 20px;
+   
+}
+
+
+nav a
+{
+    font-size: 1.3em;
+    color: #30a16e;
+    text-decoration: none;
+    padding-bottom: 50px;
+    
+}
+
+nav a:hover
+{
+    color: greenyellow;
+    
+}
+
+
+footer
+{
+    
+    background: url('images/ligne_verte2.png') repeat-x bottom;
+
+}
+footer h1
+{
+    
+    padding-top: 5%;
+    margin-right : 2%;
+    margin-left: 90%;
+    font-family: collection_new_styleregular;
+    font-size: 60px;
+
+}
+
+
+/*Page accueil*/
+
+
+strong, #phrase1
+{
+text-shadow: 2px 2px 5px #30a16e;
+color: color: #181818; 
+}
+
+#phrase1
+{
+    
+    font-family: 'open_sansbold_italic'; 
+      
+    font-size: 40px;
+    font-weight: normal;
+    margin-left: 200px;
+    padding-top: 25px;
+}
+
+#phrase1:nth-child(2)
+{
+    flex: 1;
+}
+
+#mairie /* photo mairie 1ère page */
+{
+    width: 25%;
+    margin-left: 0px;
+    opacity: 0.3;
+} 
+
+#logo
+{
+    height: 10%;
+    border: 2px #30a16e solid;
+    padding-bottom : o px;
+    border-radius: 15px 10px 10px 10px;
+    box-shadow: 6px 6px 6px #30a16e; inset;
+}
+
+#accueil
+{
+    font-size: 20px;
+    margin: auto ;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+/*Page présentation*/
+#cv
+{
+    
+    margin-left: 25%;
+    margin-right : 25%;
+    opacity: 0.9;
+}
+
+/*Page préstations*/
+
+caption
+{
+    font-family: 'open_sansbold_italic';
+    font-weight : bold;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+table
+{
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse; 
+    vertical-align: middle;
+    margin-left: 15%;
+}
+
+th
+{
+    padding-left : 10px;
+    padding-right: 10px;
+}
+
+th, td
+{
+    border: 1px solid black;
+}
+
+/*Page contact*/
+form
+{
+    
+    
+    margin: auto;
+    padding-left:10px;
+    padding-top: 10px;
+    
+}
+
+#collectivite, #nom_prenom, #email, #message
+{
+    display : block;
+    margin-bottom: 5px;
+    margin-top : 5px;
+    padding : 5px;
+    border-color : #30a16e;
+
+}
+ #plus10000
+{
+    display : inline-block;
+    margin-top : 5px;
+    
+}
+
+#moins500, #entre_500-2000, #entre_2000-3500, #entre_3500-10000,
+
+
+/*Autres tailles d'écran*/
+@media all and (max-width: 1024px)
+{
+    .bloc_page
+    {
+        width: auto;
+    }
+}
